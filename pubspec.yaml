@@ -4,16 +4,65 @@ version: 0.0.1
 homepage: example.com
 
 environment:
-  sdk: '>=3.1.5 <4.0.0'
+  sdk: ">=3.1.5 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
   flutter:
     sdk: flutter
+  flutter_svg: ^2.0.0+1
 
 dev_dependencies:
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
+  build_runner: ^2.3.2
+  flutter_gen_runner: ^5.0.1
 
-flutter: null
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/icons/
+    - assets/images/
+    - assets/fonts/
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Roboto-ThinItalic.ttf
+          style: italic
+          weight: 100
+        - asset: assets/fonts/Roboto-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Roboto-LightItalic.ttf
+          style: italic
+          weight: 300
+        - asset: assets/fonts/Roboto-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Roboto-Italic.ttf
+          style: italic
+          weight: 400
+        - asset: assets/fonts/Roboto-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Roboto-MediumItalic.ttf
+          style: italic
+          weight: 500
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Roboto-BoldItalic.ttf
+          style: italic
+          weight: 700
+        - asset: assets/fonts/Roboto-Black.ttf
+          weight: 900
+        - asset: assets/fonts/Roboto-BlackItalic.ttf
+          style: italic
+          weight: 900
+flutter_gen:
+  output: lib/generated/
+  assets:
+    outputs:
+      package_parameter_enabled: true
+  integrations:
+    flutter_svg: true
