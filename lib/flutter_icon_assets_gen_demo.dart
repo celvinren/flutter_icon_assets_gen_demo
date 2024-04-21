@@ -1,0 +1,1 @@
+library flutter_icon_assets_gen_demo;
