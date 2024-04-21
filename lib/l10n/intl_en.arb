@@ -1,0 +1,19 @@
+{
+    "done": "Done",
+    "errorGeneric": "An error has occured",
+    "cancel": "Cancel",
+    "ok": "Ok",
+    "startDate": "Start date",
+    "endDate": "End date",
+    "chooseEndDate": "Choose end date",
+    "destructiveActionConfirmationQuestion": "Are you sure?",
+    "destructiveActionConfirmationAffirmativeButton": "Yes, {action}",
+    "@destructiveActionConfirmationButton": {
+        "placeholders": {
+            "action": {
+                "example": "delete",
+                "description": "destructive action to carry out"
+            }
+        }
+    }
+}
